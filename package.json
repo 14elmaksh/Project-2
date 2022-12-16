@@ -1,0 +1,28 @@
+{
+  "name": "book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anthony-Furjanic/book.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anthony-Furjanic/book/issues"
+  },
+  "homepage": "https://github.com/Anthony-Furjanic/book#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "mysql2": "^2.3.3",
+    "notenv": "^2.0.3",
+    "sequelize": "^6.27.0"
+  }
+}

@@ -1,0 +1,5 @@
+-- DROP DATABASE
+DROP DATABASE IF EXISTS tradingpost_db;
+
+-- CREATE DATABASE
+CREATE DATABASE tradingpost_db;
