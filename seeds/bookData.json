@@ -1,0 +1,19 @@
+[
+    {
+      "name": "Thaivy",
+      "email": "tran.thaivy1997@gmail.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Lernantino",
+      "email": "lernantino@gmail.com",
+      "password": "password12345"
+    },
+    {
+      "name": "Amiko",
+      "email": "amiko2k20@aol.com",
+      "password": "password12345",
+      "contactType": "seller/buyer/both",
+      "locationId": "Where the book is at"
+    }
+  ]
