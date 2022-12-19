@@ -15,20 +15,30 @@ Book.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    author: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
     price: {
       type: DataTypes.DECIMAL(9,2),
       allowNull: false,
       defaultValue: '0.0',
     },
     isbn: {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         allowNull: false,
 
     },
     picture: {
         type: DataTypes.STRING,
         allowNull: true,
+
+        
     },
+    condition: {
+      type: DataTypes.STRING,
+      allowNull: false,
+  },
     contactId : {
       type: DataTypes.INTEGER,
       allowNull: false,
