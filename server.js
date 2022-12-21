@@ -1,4 +1,3 @@
-
 const express = require("express");
 // import sequelize connection
 const sequelize = require("./config/connection");
@@ -7,6 +6,8 @@ const model = require("./models");
 // Dependencies
 const path = require('path');
 const exphbs = require('express-handlebars');
+// package to search book by isbn
+const isbn = require('node-isbn');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
