@@ -3,7 +3,7 @@ const router = require('express').Router();
 const bookRoutes = require('./bookRoutes');
 const locationRoutes = require('./locationRoutes');
 
-router.use('./books', bookRoutes);
-router.use('./locations', locationRoutes);
+router.use('/bookroutes', bookRoutes);
+router.use('/locationroutes', locationRoutes);
 
 module.exports = router;
