@@ -1,15 +1,11 @@
-const express = require("express");
 // import sequelize connection
 const sequelize = require("./config/connection");
-const routes = require('./controller');
-const model = require("./models");
+const routes = require('./controllers');
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./controllers');
 const helpers = require('./utils/helpers');
-const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // package to search book by isbn
@@ -17,7 +13,7 @@ const isbn = require('node-isbn');
 
 
 const app = express();
-const PORT = process.env.PORT || 8001;
+const PORT = process.env.PORT || 7001;
 
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
@@ -48,7 +44,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
 });
 
