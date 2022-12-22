@@ -1,15 +1,16 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { Book } = require('../../models');
 
 router.post('/', async (req, res) => {
   try {
+    // creates book
     const bookData = await book.create(req.body);
-
+    
     req.session.save(() => {
-      req.session.user_id = userData.id;
+      req.session.book_id = bookData.id;
       req.session.logged_in = true;
 
-      res.status(200).json(userData);
+      res.status(200).json(bookData);
     });
   } catch (err) {
     res.status(400).json(err);
@@ -18,29 +19,22 @@ router.post('/', async (req, res) => {
 
 router.post('/login', async (req, res) => {
   try {
-    const userData = await User.findOne({ where: { email: req.body.email } });
+    const bookData = await Book.findOne({ 
+      where: { isbn: req.body.isbn } 
+    });
 
-    if (!userData) {
+    if (!bookData) {
       res
         .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
-      return;
-    }
-
-    const validPassword = await userData.checkPassword(req.body.password);
-
-    if (!validPassword) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
+        .json({ message: 'No book found with this ISBN' });
       return;
     }
 
     req.session.save(() => {
-      req.session.user_id = userData.id;
+      req.session.contact_id = contactData.id;
       req.session.logged_in = true;
       
-      res.json({ user: userData, message: 'You are now logged in!' });
+      res.json({ contact: contactData, message: 'You are now logged in!' });
     });
 
   } catch (err) {
@@ -58,4 +52,5 @@ router.post('/logout', (req, res) => {
   }
 });
 
+// need to apply res.render('all'); to apply to handlebar.js?
 module.exports = router;
