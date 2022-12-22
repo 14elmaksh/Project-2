@@ -5,7 +5,464 @@
       "price": "5.00",
       "isbn": "9789971985608",
       "picture": "",
-      "condition": "new"
+      "condition": "like new",
+      "contactid": "1"
+    },
+    {
+      "title": "Empathic Space :The computation of Human-centric Architecture AD",
+      "author": "Christian Derix",
+      "price": "51.00",
+      "isbn": "9781118613481",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "2"
+    },
+    {
+      "title": "Sustainable Use of Wood in Construction",
+      "author": "Coulson",
+      "price": "35.00",
+      "isbn": "9781118539668",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "3"
+    },
+    {
+      "title": "Organizational Behavior",
+      "author": "Stephen Robbins",
+      "price": "28.00",
+      "isbn": "9780133507645",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "4"
+    },
+    {
+      "title": "International Business",
+      "author": "John Daniels",
+      "price": "50.00",
+      "isbn": "9780133507645",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "5"
+    },
+    {
+      "title": "Small Business Management: An Entrepeneurs",
+      "author": "Byrd, Megginson",
+      "price": "59.00",
+      "isbn": " 9780078029097",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "6"
+    },
+    {
+      "title": "Purchasing and Supply Management",
+      "author": "Johnson, Leenders, Flynn",
+      "price": "55.00",
+      "isbn": "9780078024092",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "7"
+    },
+    {
+      "title": "Fundamentals of Accounting",
+      "author": "Phillips, Libby, Libby",
+      "price": "27.00",
+      "isbn": "9780078025914",
+      "picture": "",
+      "condition": "old",
+      "contactid": "8"
+    },
+    {
+      "title": "Law, business and society",
+      "author": "Mcadams",
+      "price": "59.00",
+      "isbn": "9780078023866",
+      "picture": "",
+      "condition": "old",
+      "contactid": "9"
+    },
+    {
+      "title": "Global Investments",
+      "author": "Solnik, Bruno, McLeavey",
+      "price": "45.00",
+      "isbn": "9780321527707",
+      "picture": "",
+      "condition": "new",
+      "contactid": "10"
+    },
+    {
+      "title": "Essentials of Marketing Management",
+      "author": "Marshall, Greg W., Johnston",
+      "price": "45.00",
+      "isbn": "9780078028786",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "1"
+    },
+    {
+      "title": "The Mind and Heart of the Negotiator",
+      "author": "Thompson, Leigh",
+      "price": "25.00",
+      "isbn": "9780132543866",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "2"
+    },
+    {
+      "title": "Contemporary Management",
+      "author": "Gareth Jones, Jennifer George",
+      "price": "45.00",
+      "isbn": "9789971985608",
+      "picture": "",
+      "condition": "new",
+      "contactid": "3"
+    },
+    {
+      "title": "Cost-Benefit Analysis",
+      "author": "Boardman, Anthony, Greenber",
+      "price": "35.00",
+      "isbn": "9780078112690",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "4"
+    },
+    {
+      "title": "Labor Economics",
+      "author": "Borjas, George J.",
+      "price": "55.00",
+      "isbn": "9780073511368",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "4"
+    },
+    {
+      "title": "Financial Accounting",
+      "author": "Waybright, Jeffrey, Kemp",
+      "price": "85.00",
+      "isbn": "9780136060482",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "5"
+    },
+    {
+      "title": "Art of War",
+      "author": "Sun Tzu",
+      "price": "5.00",
+      "isbn": "9789971985608",
+      "picture": "",
+      "condition": "new",
+      "contactid": "6"
+    },
+    {
+      "title": "Customer Service",
+      "author": "Harris, Elaine K.",
+      "price": "55.00",
+      "isbn": "9780135064337",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "7"
+    },
+    {
+      "title": "Art of War",
+      "author": "Sun Tzu",
+      "price": "5.00",
+      "isbn": "9789971985608",
+      "picture": "",
+      "condition": "new",
+      "contactid": "8"
+    },
+    {
+      "title": "Principles of Economics",
+      "author": "Frank, Robert H., Bernanke",
+      "price": "45.00",
+      "isbn": "9780073402888",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "9"
+    },
+    {
+      "title": "Better Business",
+      "author": "Poatsy, Mary Ann, Martin",
+      "price": "25.00",
+      "isbn": "9780132251211",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "10"
+    },
+    {
+      "title": "Medisoft Made Easy",
+      "author": "Burke, Lillian, Weill",
+      "price": "35.00",
+      "isbn": "9780138131395",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "1"
+    },
+    {
+      "title": "Internet Office Projects",
+      "author": "Sun Tzu",
+      "price": "35.00",
+      "isbn": "9780538727471",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "2"
+    },
+    {
+      "title": "Systems for Administrative Office Support",
+      "author": "Brower, Walter A",
+      "price": "25.00",
+      "isbn": "9780028010250",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "3"
+    },
+    {
+      "title": "Computers int the Medical Office",
+      "author": "Sanderson",
+      "price": "15.00",
+      "isbn": "9780077836382",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "4"
+    },
+    {
+      "title": "Office Administration",
+      "author": "Schroeder, Betty L.",
+      "price": "215.00",
+      "isbn": "9780131145511",
+      "picture": "",
+      "condition": "new",
+      "contactid": "5"
+    },
+    {
+      "title": "Electronic Commerce",
+      "author": "Perry, James T., Schneider",
+      "price": "21.00",
+      "isbn": "9780619033781",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "6"
+    },
+    {
+      "title": "At work in the electronic Office",
+      "author": "Schroeder, Betty L.",
+      "price": "215.00",
+      "isbn": "9780130195227",
+      "picture": "",
+      "condition": "new",
+      "contactid": "7"
+    },
+    {
+      "title": "Educating for the Knowledge Economy",
+      "author": "Schroeder, Betty L.",
+      "price": "215.00",
+      "isbn": "9780415615075",
+      "picture": "",
+      "condition": "new",
+      "contactid": "8"
+    },
+    {
+      "title": "Office Administration",
+      "author": "Schroeder, Betty L.",
+      "price": "215.00",
+      "isbn": "9780131145511",
+      "picture": "",
+      "condition": "new",
+      "contactid": "9"
+    },
+    {
+      "title": "Animal Diversity",
+      "author": "Hickman",
+      "price": "45.00",
+      "isbn": " 9780073524252",
+      "picture": "",
+      "condition": "like new",
+      "contactid": "10"
+    },
+    {
+      "title": "Office Administration",
+      "author": "Schroeder, Betty L.",
+      "price": "215.00",
+      "isbn": "9780131145511",
+      "picture": "",
+      "condition": "new",
+      "contactid": "1"
+    },
+    {
+      "title": "System Dynamics",
+      "author": "William Palm III",
+      "price": "115.00",
+      "isbn": "9780073398068",
+      "picture": "",
+      "condition": "new",
+      "contactid": "2"
+    },
+    {
+      "title": "Organic Chemistry",
+      "author": " Vollhardt, K. Peter C",
+      "price": "75.00",
+      "isbn": "9781429204941",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "3"
+    },
+    {
+      "title": "Mechanical Vibrations 5th Edition",
+      "author": " Vollhardt, K. Peter C",
+      "price": "75.00",
+      "isbn": "9780132128193",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "4"
+    },
+    {
+      "title": "Physical Geology",
+      "author": " Vollhardt, K. Peter C",
+      "price": "75.00",
+      "isbn": "9780078096105",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "5"
+    },
+    {
+      "title": "Quantum Mechanics",
+      "author": "McIntyre, David",
+      "price": "75.00",
+      "isbn": "9780321765796",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "6"
+    },
+    {
+      "title": "Chemistry",
+      "author": "Burdge, Julia",
+      "price": "25.00",
+      "isbn": "9780077468422",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "7"
+    },
+    {
+      "title": "Organic Chemistry",
+      "author": " Vollhardt, K. Peter C",
+      "price": "75.00",
+      "isbn": "9781429204941",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "8"
+    },
+    {
+      "title": "Environmental Science",
+      "author": " Miller, G. Tyler",
+      "price": "75.00",
+      "isbn": "9780495560173",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "9"
+    },
+    {
+      "title": "Organic Chemistry",
+      "author": " Miller, G. Tyler",
+      "price": "75.00",
+      "isbn": " 9780840054982",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "10"
+    },
+    {
+      "title": "Biology",
+      "author": "Raven, Peter H., Johnson",
+      "price": "175.00",
+      "isbn": " 9780077350024",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "1"
+    },
+    {
+      "title": "Human Anatomy",
+      "author": " Miller, G. Tyler",
+      "price": "75.00",
+      "isbn": "9780321753274",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "2"
+    },
+    {
+      "title": "Introduction to Thermal Physics",
+      "author": "Schroeder, Daniel V.",
+      "price": "75.00",
+      "isbn": " 9780201380279",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "3"
+    },
+    {
+      "title": "Introduction to Solid State Physics",
+      "author": "Charles Kittel",
+      "price": "75.00",
+      "isbn": "9780471415268",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "4"
+    },
+    {
+      "title": "Introduction to Thermal Physics",
+      "author": "Schroeder, Daniel V.",
+      "price": "75.00",
+      "isbn": " 9780201380279",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "5"
+    },
+    {
+      "title": "Introduction to Modern Astrophysics",
+      "author": "Carroll, Bradley W.",
+      "price": "55.00",
+      "isbn": "9780805304022",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "6"
+    },
+    {
+      "title": "Flatfishes: Biology and Exploitation",
+      "author": " Gibson",
+      "price": "175.00",
+      "isbn": "9781118501191",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "7"
+    },
+    {
+      "title": "Economic Geography",
+      "author": "Glassmeier, Amy",
+      "price": "75.00",
+      "isbn": "9780471426370",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "8"
+    },
+    {
+      "title": "Biological Nitrogen Fixation",
+      "author": "De Bruijn, De",
+      "price": "45.00",
+      "isbn": "9781118637043",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "9"
+    },
+    {
+      "title": "Ecologyy: Concepts and Applications",
+      "author": "Molles, Manuel, Molles",
+      "price": "75.00",
+      "isbn": "9780073383224",
+      "picture": "",
+      "condition": "gently used",
+      "contactid": "10"
     }
+
+    
   ]
+
+
+
+
     
