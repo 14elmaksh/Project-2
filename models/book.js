@@ -25,7 +25,7 @@ Book.init(
       defaultValue: '0.0',
     },
     isbn: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
 
     },

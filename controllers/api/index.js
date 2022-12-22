@@ -1,8 +1,10 @@
 const router = require('express').Router();
 const bookRoutes = require('./bookRoutes');
 const locationRoutes = require('./locationRoutes');
+const contactRoutes = require('./contactRoutes');
 
-router.use('/bookroutes', bookRoutes);
-router.use('/locationroutes', locationRoutes);
+router.use('/book', bookRoutes);
+router.use('/location', locationRoutes);
+router.use('/contact', contactRoutes);
 
 module.exports = router;
