@@ -26,12 +26,37 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/buttonpage', async (req, res) => {
+  try {
+    const bookData = await Book.findAll({
+      include: [
+        {
+          model: Location,
+          through: BookLocation, 
+          as: "book_locations"
+        },
+      ]
+    });
+
+    const books = bookData.map((book) => book.get({ plain: true }));
+      console.log(JSON.stringify(books,null,2))
+    res.render('buttonpage', { 
+      books, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+
 // re-writing the homepage to do a search
 // GET /search/:isbn
 router.get('/search/:isbn', async (req, res) => {
   console.log(req.params.isbn);
   try {
-    const bookData = await book.findAll({
+    const bookData = await Book.findAll({
       where: {
         [Op.or]: [
           { 
@@ -44,7 +69,7 @@ router.get('/search/:isbn', async (req, res) => {
             }
           },
           {
-            '$User.name$': { 
+            isbn: { 
               [Op.regexp]: req.params.isbn 
             }
           }
@@ -56,18 +81,18 @@ router.get('/search/:isbn', async (req, res) => {
       ],
       include: [
         {
-          model: Book,
-          attributes: ['title'],
+          model: Location, through:BookLocation
+          ,
         },
       ],
     });
 
     // Serialize data so the template can read it
-    const locations = locationData.map((location) => location.get({ plain: true }));
-
+    const books = bookData.map((location) => location.get({ plain: true }));
+console.log(books)
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      locations, 
+    res.render('buyerpage', { 
+      books, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
