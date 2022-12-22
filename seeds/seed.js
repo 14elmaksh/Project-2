@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { Book, Location } = require('../models');
+const { Book, Location, Contact, BookLocation } = require('../models');
 
 const bookData = require('./bookData.json');
 const locationData = require('./locationData.json');
@@ -11,14 +11,18 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-
-  for (const book of bookData) {
-    await Book.create({
-      ...book,
-      // ask instructor about this it should be location or contact
-      locationId: locations[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+  const contacts= await Contact.bulkCreate(contactData, {
+    individualHooks: true,
+    returning: true,
+  });
+  const books = await Book.bulkCreate(bookData, {
+    individualHooks: true,
+    returning: true,
+  });
+  const bookLocation = await BookLocation.bulkCreate(bookLocationData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   process.exit(0);
 };
