@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const { Location } = require('../../models');
 
-router.post('/', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const newLocation = await Location.create({
       ...req.body,
-      user_id: req.session.user_id,
+      location_id: req.session.location_id,
     });
 
     res.status(200).json(newLocation);
@@ -14,17 +14,17 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete('/:id', async (req, res) => {
   try {
     const locationData = await Location.destroy({
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
+        locationId: req.session.locationId,
       },
     });
 
     if (!locationData) {
-      res.status(404).json({ message: 'No sellers found selling this :id' });
+      res.status(404).json({ message: 'No location found with this :id' });
       return;
     }
 
