@@ -3,7 +3,70 @@
       "name": "Joe Bendino",
       "email": "Joe.Bendino@gmail.com",
       "password": "12345678",
-      "contactType": "guy",
+      "contactType": "seller",
       "locationId": "1"
+    },
+    {
+      "name": "Anthony Furjanic",
+      "email": "Anthony.Furganic@gmail.com",
+      "password": "12345678",
+      "contactType": "buyer",
+      "locationId": "2"
+    },
+    {
+      "name": "Thaivy Tran",
+      "email": "Thaivy.Tran@gmail.com",
+      "password": "12345678",
+      "contactType": "both",
+      "locationId": "3"
+    },
+    {
+      "name": "Fred Sifelt",
+      "email": "fred.sifelt@gmail.com",
+      "password": "12345678",
+      "contactType": "buyer",
+      "locationId": "4"
+    },
+    {
+      "name": "Carol Trinh",
+      "email": "carol.trinh@gmail.com",
+      "password": "12345678",
+      "contactType": "both",
+      "locationId": "5"
+    },
+    {
+      "name": "jesse joe",
+      "email": "Jesse.joe@gmail.com",
+      "password": "12345678",
+      "contactType": "seller",
+      "locationId": "6"
+    },
+    {
+      "name": "sandy tran",
+      "email": "sandy.tran@gmail.com",
+      "password": "12345678",
+      "contactType": "seller",
+      "locationId": "7"
+    },
+    {
+      "name": "erik jameson",
+      "email": "Jameson.e@gmail.com",
+      "password": "12345678",
+      "contactType": "both",
+      "locationId": "8"
+    },
+    {
+      "name": "brandon mccauley",
+      "email": "brandon.mccauley@gmail.com",
+      "password": "12345678",
+      "contactType": "seller",
+      "locationId": "9"
+    },
+    {
+      "name": "saeed elmakki",
+      "email": "saeed.e@gmail.com",
+      "password": "12345678",
+      "contactType": "buyer",
+      "locationId": "10"
     }
 ]
