@@ -3,6 +3,8 @@ const { Book, Location, Contact, BookLocation } = require('../models');
 
 const bookData = require('./bookData.json');
 const locationData = require('./locationData.json');
+const contactData = require('./contactData.json');
+const bookLocationData = require('./bookLocationData.json')
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });

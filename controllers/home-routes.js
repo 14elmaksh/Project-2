@@ -7,22 +7,17 @@ router.get('/', async (req, res) => {
     const bookData = await Book.findAll({
       include: [
         {
-          model: Book,
-          attributes: ['title'],
-        },
-        {
           model: Location,
-          attributes: ['title', 'location'], // specifying columns
           through: BookLocation, 
-          as: "book_location"
+          as: "book_locations"
         },
-      ],
+      ]
     });
 
-    const locations = locationData.map((location) => location.get({ plain: true }));
-
+    const books = bookData.map((book) => book.get({ plain: true }));
+      console.log(JSON.stringify(books,null,2))
     res.render('homepage', { 
-      locations, 
+      books, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
