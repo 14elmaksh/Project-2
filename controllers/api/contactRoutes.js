@@ -8,10 +8,10 @@ router.post('/', async (req, res) => {
     
         // saves book into contact id 
         req.session.save(() => {
-            req.session.book_id = contactData.id;
+            req.session.book_id = conkData.id;
             req.session.logged_in = true;
     
-            res.status(200).json(contactData);
+            res.status(200).json(bookData);
         });
         } catch (err) {
         res.status(400).json(err);
