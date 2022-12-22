@@ -2,7 +2,7 @@ const express = require("express");
 // import sequelize connection
 const sequelize = require("./config/connection");
 const routes = require('./controller');
-
+const model = require("./models");
 
 // Dependencies
 const path = require('path');
@@ -12,6 +12,8 @@ const isbn = require('node-isbn');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+const hbs = exphbs.create({});
 
 // Set Handlebars as the default template engine.
 // app.engine('handlebars', hbs.engine);
