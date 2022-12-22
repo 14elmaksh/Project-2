@@ -50,27 +50,74 @@ router.get('/buttonpage', async (req, res) => {
   }
 });
 
+router.get('/buyerpage', async (req, res) => {
+  try {
+    const bookData = await Book.findAll({
+      include: [
+        {
+          model: Location,
+          through: BookLocation, 
+          as: "book_locations"
+        },
+      ]
+    });
+
+    const books = bookData.map((book) => book.get({ plain: true }));
+      console.log(JSON.stringify(books,null,2))
+    res.render('buyerpage', { 
+      books, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.get('/sellerpage', async (req, res) => {
+  try {
+    const bookData = await Book.findAll({
+      include: [
+        {
+          model: Location,
+          through: BookLocation, 
+          as: "book_locations"
+        },
+      ]
+    });
+
+    const books = bookData.map((book) => book.get({ plain: true }));
+      console.log(JSON.stringify(books,null,2))
+    res.render('sellerpage', { 
+      books, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 // re-writing the homepage to do a search
 // GET /search/:isbn
-router.get('/search/:isbn', async (req, res) => {
-  console.log(req.params.isbn);
+router.get('/search', async (req, res) => {
+  console.log(req.query.q);
   try {
     const bookData = await Book.findAll({
       where: {
         [Op.or]: [
           { 
             title: {
-              [Op.regexp]: req.params.isbn
+              [Op.regexp]: req.query.q
             }
           },{ 
-            description: {
-              [Op.regexp]: req.params.isbn
+            author: {
+              [Op.regexp]: req.query.q
             }
           },
           {
             isbn: { 
-              [Op.regexp]: req.params.isbn 
+              [Op.regexp]: req.query.q 
             }
           }
         ]
@@ -79,17 +126,11 @@ router.get('/search/:isbn', async (req, res) => {
         // ASC or DESC for the second value
         ['title', 'ASC'],
       ],
-      include: [
-        {
-          model: Location, through:BookLocation
-          ,
-        },
-      ],
     });
 
     // Serialize data so the template can read it
     const books = bookData.map((location) => location.get({ plain: true }));
-console.log(books)
+    console.log(JSON.stringify(books,null,2))
     // Pass serialized data and session flag into template
     res.render('buyerpage', { 
       books, 
@@ -97,6 +138,7 @@ console.log(books)
     });
   } catch (err) {
     res.status(500).json(err);
+    console.log(err);
   }
 });
 
@@ -120,37 +162,6 @@ router.get('/book/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-});
-
-// Use withAuth middleware to prevent access to route
-router.get('/profile', async (req, res) => {
-  try {
-    // Find the logged in user based on the session ID
-    const contactData = await Contact.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
-    });
-
-    const contact = contactData.get({ plain: true });
-
-    res.render('profile', {
-      ...contact,
-      logged_in: true
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect('/profile');
-    return;
-  }
-
-  res.render('login');
-
 });
 
 module.exports = router;
