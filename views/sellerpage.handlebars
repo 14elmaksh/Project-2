@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <h1>Let's sell a book!</h1>
+    <h1>Let's sell a book!</h1>
     <h2>Enter ISBN:</h2>
     <input type="text" id="isbn" placeholder="Search isbn">
     <!-- when you enter a valid ISBN book should pop up -->
@@ -17,12 +17,4 @@
     <!-- POST request created in db -->
     <button class="btn btn-primary">Post!</button>
 </body>
-    <script>
-        document.querySelector("#isbn-search").addEventListener("click", function(event){
-            terms=document.querySelector("#isbn").value
-
-
-            window.location=`/search?q=${terms}`
-        })
-    </script>
 </html>

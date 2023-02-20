@@ -1,6 +1,13 @@
 const router = require('express').Router();
 const { Book } = require('../../models');
  
+router.get('/', async (req, res) => {
+  Book.findAll({})
+  .then(
+    book => res.json(book)
+  ).catch( err => res.json(err))
+})
+
 router.post('/', async (req, res) => {
  try {
    // creates book
@@ -52,7 +59,6 @@ router.post('/logout', (req, res) => {
  }
 });
  
-router.get('/')
  
 // need to apply res.render('all'); to apply to handlebar.js?
 module.exports = router;

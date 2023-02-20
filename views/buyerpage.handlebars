@@ -10,11 +10,9 @@
         <p>{{picture}}</p>
         <p>{{condition}}</p>
 
-    <script>
-        document.querySelector("#isbn-search").addEventListener("click", function(event){
-            terms=document.querySelector("#isbn").value
-
-
-            window.location=`/search?q=${terms}`
-        })
-    </script>
+<script>
+    document.querySelector("#isbn-search").addEventListener("click", function(event){
+    terms=document.querySelector("#isbn").value
+    window.location=`/search?q=${terms}`
+})
+</script>
