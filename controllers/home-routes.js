@@ -18,13 +18,16 @@ router.get('/', async (req, res) => {
       console.log(JSON.stringify(books,null,2))
     res.render('homepage', { 
       books, 
-      logged_in: req.session.logged_in 
-    });
+      logged_in: req.session.logged_in,
+      layout: 'main'
+    }
+    );
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
-});
+}
+);
 
 router.get('/buttonpage', async (req, res) => {
   try {
